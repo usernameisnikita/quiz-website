@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizMaker Pro ✨</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <h1>QuizMaker Pro 🎡</h1>
+    <input type="text" id="quizTitle" placeholder="Enter Quiz Title" class="input-title" />
+
+    <div class="question-controls">
+      <button onclick="addQuestion('mcq')">Add MCQ</button>
+      <button onclick="addQuestion('truefalse')">Add True/False</button>
+      <button onclick="addQuestion('short')">Add Short Answer</button>
+      <button onclick="addQuestion('poll')">Add Poll</button>
+    </div>
+
+    <div id="questionsContainer"></div>
+
+    <div class="action-buttons">
+      <button onclick="startQuiz()" class="start-btn">🚀 Start Quiz</button>
+    </div>
+  </div>
+
+  <div class="quiz-area hidden">
+    <h2 id="displayTitle"></h2>
+    <div id="quizQuestions"></div>
+    <div class="action-buttons">
+      <button onclick="submitQuiz()" class="submit-btn">✅ Submit Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
